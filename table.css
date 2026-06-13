@@ -1,0 +1,39 @@
+body {
+  background-color: lightsalmon;
+}
+
+p {
+  font-size: 50px;
+  color: gold;
+}
+
+table {
+  border: double 5px darkred;
+  font-size: 24px;
+  width: 50%;
+}
+
+th, td {
+  border: solid 2px darkgoldenrod;
+  width: 25%;
+  height: 1cm;
+}
+tr:hover{
+   
+    cursor: pointer;
+    color: antiquewhite;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyZXl2b3NybDNkamFjZTViN296d3p3aWo1enJqazA1ajFyendlbTdhOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kkoRgXbTCPY3K/source.gif);
+    
+}
+
+tr:nth-child(odd) {
+    background-color: lightskyblue;
+}
+
+.ss {
+    border: dotted red;
+}

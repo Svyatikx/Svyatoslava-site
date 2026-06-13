@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт Святослава</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #000000;
+            color: rgb(255, 239, 239);
+            padding: 25px;
+            text-align: center;
+            font-size: 42px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            position: relative;
+            z-index: 5;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            padding: 20px 40px 40px;
+            gap: 40px;
+            position: relative;
+        }
+
+        /* Кнопка "Мої Роботи" — ще вище у верхньому лівому куті */
+        .my-works {
+            position: absolute;
+            top: 5px;        /* Піднято вище */
+            left: 40px;
+            z-index: 20;
+        }
+
+        /* Фото в правому верхньому куті */
+        .profile-img {
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #00ff88;
+            box-shadow: 0 15px 35px rgba(0, 255, 136, 0.5);
+            z-index: 10;
+        }
+
+        .sidebar {
+            width: 300px;
+            background-color: #1a1a1a;
+            padding: 35px 25px;
+            border-radius: 16px;
+            height: fit-content;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+            overflow-y: auto;
+            max-height: 80vh;
+            margin-top: 20px;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 40px;
+            padding-right: 280px;
+        }
+
+        .big-btn {
+            font-size: 28px;
+            padding: 16px 55px;
+            background: linear-gradient(135deg, #00c853, #00e676);
+            color: white;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(0, 200, 83, 0.7);
+            transition: all 0.4s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .big-btn:hover {
+            transform: translateY(-8px) scale(1.1);
+            box-shadow: 0 15px 40px rgba(0, 200, 83, 0.9);
+        }
+
+        .main h1 {
+            font-size: 52px;
+            padding: 18px 50px;
+            margin: 15px 0 25px 0;
+            background: linear-gradient(135deg, #00c853, #00e676);
+            color: white;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(0, 200, 83, 0.5);
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #00c853, #00e676, #00c853);
+            color: white;
+            padding: 16px 32px;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 6px 20px rgba(0, 200, 83, 0.5);
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #00e676, #00ff9f, #00e676);
+            transform: translateY(-5px) scale(1.08);
+        }
+
+        .bio {
+            font-size: 22px;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 20px 0 40px 0;
+            opacity: 0.95;
+        }
+
+        footer {
+            background-color: #006400;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Сайт Святослава
+    </header>
+
+    <div class="main">
+        <!-- Кнопка Мої Роботи */
+        <div class="my-works">
+            <a href="#" class="big-btn">Мої Роботи</a>
+        </div>
+
+        <!-- Фото в правому верхньому куті -->
+        <img src="imege/0-02-05-14aaf35c64e4f253dc1f7e25714aa9a590c8a67ff31704ee7b75b494fe1ede18_b017586d2342b9f5.jpg" 
+             alt="Святослав" 
+             class="profile-img">
+
+        <div class="sidebar">
+            <a href="bloks.html" class="btn">Відкрити Блоки</a>
+            <a href="gradient.html" class="btn">Відкрити Градієнти</a>
+            <a href="symbols.html" class="btn">Відкрити Символи</a>
+            <a href="table.html" class="btn">Відкрити Таблиці</a>
+            <a href="text.html" class="btn">Відкрити Текст (Україна)</a>
+            <a href="links.html" class="btn">Відкрити Посилання</a>
+            <a href="image.html" class="btn">Відкрити Зображення</a>
+            <a href="lists.html" class="btn">Відкрити Списки</a>
+        </div>
+
+        <div class="content">
+            <div style="text-align: center;">
+                <h1>Ласкаво просимо!</h1>
+                
+                <div class="bio">
+                    <p>Мене звати Святослав. Я активний і цікавлюсь багатьма речами.</p>
+                    <p>Особливо люблю дзюдо - ходжу на тренування, розвиваю силу, швидкість і характер.</p>
+                    <p>Також займаюсь монтажем відео, збираю LEGO і люблю кататися на велосипеді.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

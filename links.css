@@ -1,0 +1,24 @@
+url('https://fonts.googleapis.com/css2?family=Comforter&family=Pacifico&family=Rubik+Bubbles&family=Rubik+Burned&family=Rubik+Distressed&display=swap');
+p{
+    font-size: 50px;
+    color: blueviolet;
+}
+a{
+    text-decoration: none;
+}
+.a1{
+    border: 5px blue solid;
+    border-radius: 25%;
+    font-size: 24px;
+padding: 5px 10px;
+color: blue;
+font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: yellow;
+}
+.a1:hover{
+    background-color: blue;
+    border-color: yellow;
+    color: yellow;
+}
