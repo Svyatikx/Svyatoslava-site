@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.bgvideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: clamp(3rem, 8vw, 7rem);
+    text-shadow: 0 5px 20px rgba(0,0,0,0.7);
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
+/* Навігація (ліворуч) */
+nav {
+    background: #333;
+    width: 20%;
+    float: left;
+    padding: 20px;
+    min-height: 600px;
+    color: white;
+}
+
+/* Основний контент */
+main {
+    width: 55%;
+    float: left;
+    padding: 30px;
+    background: white;
+    min-height: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Бічна панель (праворуч) */
+aside {
+    width: 25%;
+    float: left;
+    background: #f8f8f8;
+    padding: 25px;
+    min-height: 600px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    clear: both;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.mc {
+    min-width: 250px;
+}
+
+/* Кнопки */
+.myButton {
+    display: block;
+    width: 90%;
+    margin: 12px auto;
+    padding: 15px;
+    background: linear-gradient(135deg, #4CAF50, #2E8B57);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.myButton:hover {
+    background: linear-gradient(135deg, #45a049, #2E8B57);
+    transform: translateY(-3px);
+}
+
+/* Адаптив */
+@media (max-width: 992px) {
+    nav, main, aside {
+        width: 100%;
+        float: none;
+    }
+}
